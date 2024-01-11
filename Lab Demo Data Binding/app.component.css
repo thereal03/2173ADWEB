@@ -1,0 +1,18 @@
+.red{
+    color: red;
+}
+
+.maroon {
+    color: maroon;
+}
+h1{
+    margin-left: 2em;
+    padding-top: 2em;
+}
+body{
+    margin-left: 5em;
+}
+
+.space{
+    margin-left: .5em;
+}
