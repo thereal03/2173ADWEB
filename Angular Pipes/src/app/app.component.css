@@ -1,0 +1,93 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #c0c3c5;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .container:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+    transition: all 0.3s ease;
+  }
+  
+  /* Component-specific styles */
+  h3 {
+    color: #333;
+    margin-bottom: 15px;
+    font-size: 25px;
+  }
+  
+  p {
+    margin-bottom: 10px;
+    font-size: 20px;
+    line-height: 1.6;
+  }
+  
+  pre {
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-radius: 8px;
+    overflow-x: auto;
+    font-size: 18px;
+    margin-bottom: 15px; /* Add margin bottom */
+  }
+  
+  /* Colors */
+  .text-pipe {
+    background-color: #f0ad4e;
+    color: #333; /* Dark text for better readability */
+  }
+  
+  .date-pipe {
+    background-color: #5bc0de;
+    color: #333;
+  }
+  
+  .chained-pipe {
+    background-color: #d9534f;
+    color: #fff;
+  }
+  
+  .async-pipe {
+    background-color: #5cb85c;
+    color: #333;
+  }
+  
+  .currency-pipe {
+    background-color: #0275d8;
+    color: #fff;
+  }
+  
+  .decimal-pipe {
+    background-color: #5bc0de;
+    color: #333;
+  }
+  
+  .json-pipe {
+    background-color: #f0ad4e;
+    color: #333;
+  }
+  
+  .percent-pipe {
+    background-color: #d9534f;
+    color: #fff;
+  }
+  
+  .slice-pipe {
+    background-color: #5cb85c;
+    color: #333;
+    font-size: 20px; /* Reduce font size */
+    padding: 15px; /* Add padding */
+    border-radius: 8px; /* Rounded corners */
+  }

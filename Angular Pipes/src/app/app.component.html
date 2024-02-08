@@ -1,0 +1,99 @@
+<body>
+<div class="container text-pipe">
+  <h3>Text Pipe</h3>
+  <div>
+    <p>{{ 'hello world' | uppercase }}</p>
+    <p>{{ 'Angular Pipes' | slice:0:7 }}</p>
+    <p>{{ 'example@email.com' | lowercase }}</p>
+  </div>
+</div>
+
+<div class="container date-pipe">
+  <h3>Date Pipe</h3>
+  <div>
+    <p>Short Date: {{ presentDate | date: 'shortDate' | uppercase }}</p>
+    <p>Medium Date: {{ presentDate | date: 'mediumDate' }}</p>
+    <p>Long Date: {{ presentDate | date: 'longDate' }}</p>
+    <p>This is a short date: {{ presentDate | date: 'shortDate' }} <br/> <br>This indicates the hours and minutes:- {{ presentDate | date: 'h:mm' }}</p>
+    <p>This line shows the full date: {{ presentDate | date: 'fullDate' }} <br/></p>
+    <p>This will show a formatted date:- {{ presentDate | date: 'M/dd/yyyy' }} <br/></p>
+  </div>
+</div>
+
+<div class="container chained-pipe">
+  <h3>Chained Pipes</h3>
+  <div>
+    <p>Date with uppercase: {{ presentDate | date: 'fullDate' | uppercase }} <br/></p>
+    <p>Date with lowercase: {{ presentDate | date: 'medium' | lowercase }} <br/></p>
+    <p>Name with lowercase and slice: {{ 'ANGULAR PIPE' | lowercase | slice:0:7 }}</p>
+  </div>
+</div>
+
+<div class="container async-pipe">
+  <h3>Async Pipe</h3>
+  <div>
+    <p>Seconds changing in Time: {{ time$ | async | date:'mediumTime' }}</p>
+  </div>
+</div>
+
+
+<div class="container currency-pipe">
+  <h3>Currency Pipe</h3>
+  <div>
+    <p>{{ price | currency }}</p>
+    <p>{{ price | currency: 'INR' }}</p>
+    <p>{{ 12345.67 | currency: 'EUR':'symbol':'4.2-2' }}</p>
+  </div>
+</div>
+
+<div class="container decimal-pipe">
+  <div>
+    <h3>Decimal Pipe</h3>
+    <p> {{ decimalNum1 | number }} </p>
+    <p> {{ decimalNum2 | number }} </p>
+    <p> {{ decimalNum3 | number }} </p>
+  </div>
+</div>
+
+<div class="container json-pipe">
+  <h3>JSON Pipes</h3>
+  <div>
+    <p>Example 1: Without JSON pipe</p>
+    <pre class="code">{{ { name: 'John', age: 30 } }}</pre>
+    
+    <p>Example 2: With JSON pipe</p>
+    <pre class="code">{{ { name: 'John', age: 30 } | json }}</pre>
+    
+    <p>Example 3: With complex object</p>
+    <pre class="code">{{ { 
+      "name": "Alice",
+      "age": 25,
+      "address": {
+        "street": "123 Main St",
+        "city": "Cityville",
+        "zip": "12345"
+      },
+      "hobbies": ["Reading", "Hiking", "Painting"]
+    } | json }}</pre>
+  </div>
+</div>
+
+<div class="container percent-pipe ">
+  <h3>Percent Pipe</h3>
+  <div>
+    <p>A: {{ a | percent }}</p>
+    <p>B: {{ b | percent: '4.3-5' }}</p>
+    <p>C: {{ c | percent: '1.2-4' }}</p>
+  </div>
+</div>
+
+<div class="container slice-pipe">
+  <h3>Slice Pipes</h3>
+  <div>
+    <h3>Start index:- {{ Fruits | slice: 2 }}</h3>
+    <h4>Start and end index: {{ Fruits | slice: 1:4 }}</h4>
+    <h5>Negative index:- {{ Fruits | slice:-2 }}</h5>
+    <h6>Negative start and end index: {{ Fruits | slice:-4:-2 }}</h6>
+  </div>
+</div>
+</body>
